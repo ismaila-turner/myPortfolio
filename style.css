@@ -63,23 +63,35 @@ footer {
 /* Hero Section */
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #e0f7fa;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
+/* Square and stylish profile image */
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px; /* Square with rounded corners */
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 3px solid #00796b;
-  margin: 1rem;
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+}
+
 
 .intro {
   max-width: 600px;
