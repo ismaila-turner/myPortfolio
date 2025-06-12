@@ -6,7 +6,7 @@ body {
     color: #333;
   }
   
-  header {
+/*   header {
     background: #333;
     color: #fff;
     padding: 1rem 2rem;
@@ -29,7 +29,7 @@ body {
   
   nav a:hover {
     text-decoration: underline;
-  }
+  } */
   
   main {
     padding: 2rem;
