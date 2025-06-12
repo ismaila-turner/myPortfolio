@@ -365,6 +365,55 @@ body {
     margin: 5px 0 0;
     color: #555;
   }
-  
+  /* Base styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #00796b;
+  color: white;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #004d40;
+    margin-top: 1rem;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+}
+
   
   
