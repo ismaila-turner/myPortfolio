@@ -338,3 +338,15 @@ button:hover {
 .download-btn:hover {
   background-color: #004d40;
 }
+#main-nav {
+  display: none; /* hidden by default on small screens */
+}
+
+#main-nav.show {
+  display: block; /* shown when toggled */
+}
+@media (min-width: 769px) {
+  #main-nav {
+    display: flex !important;
+  }
+}
