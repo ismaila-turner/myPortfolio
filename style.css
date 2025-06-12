@@ -138,13 +138,15 @@ button:hover {
 /* Hero Section */
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 2px; /* square with slightly rounded corners */
+  width: 180px;            /* slightly bigger */
+  height: 180px;
+  border-radius: 8px;      /* subtle rounded corners */
   object-fit: cover;
-  margin-top: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1.5rem auto 0;   /* top margin + auto horizontal centering */
+  display: block;          /* ensure margin auto works */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Optional: spacing inside .intro */
 .intro {
