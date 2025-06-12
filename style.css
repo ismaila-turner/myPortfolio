@@ -345,7 +345,7 @@ button:hover {
 #main-nav.show {
   display: block; /* shown when toggled */
 }
-@media (min-width: 769px) {
+@media (min-width: 969px) {
   #main-nav {
     display: flex !important;
   }
